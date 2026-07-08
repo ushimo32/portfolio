@@ -148,6 +148,35 @@
     color: var(--text-sub);
   }
 
+  /* 作っている人 */
+  .maker { background: var(--bg); }
+  .maker .maker-card {
+    margin-top: 8px;
+    padding: 24px 20px;
+    background: var(--bg-alt);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+  }
+  .maker .maker-name {
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: var(--text);
+    line-height: 1.4;
+  }
+  .maker .maker-role {
+    margin-top: 4px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: var(--accent-dark);
+  }
+  .maker .maker-body { margin-top: 18px; }
+  .maker .maker-body p {
+    font-size: 1rem;
+    line-height: 1.9;
+    color: var(--text);
+  }
+  .maker .maker-body p + p { margin-top: 16px; }
+
   /* できること */
   .can { background: var(--bg-alt); }
   .can .cards {
@@ -276,6 +305,21 @@
       </figure>
     </div>
     <p class="note">※ 掲載画面はダミーデータによるものです。牧場名・個人名・実データは一切含みません。</p>
+  </div>
+</section>
+
+<!-- 作っている人 -->
+<section class="maker">
+  <div class="wrap">
+    <h2>作っている人</h2>
+    <div class="maker-card">
+      <p class="maker-name">maesuke</p>
+      <p class="maker-role">肥育牧場 現場スタッフ(現場歴5年)</p>
+      <div class="maker-body">
+        <p>毎日の現場作業のかたわら、『この転記は何のためにあるのか』『同じ情報を何度も別のExcelに入力している』という自分自身の不満を解決するために、業務システムを独学で作り始めました。</p>
+        <p>ITの専門会社ではありません。だからこそ、『現場の人がその場で入力できるか』『汚れた手や手袋のままでも使えるか』『屋外の日差しの下でも読めるか』という目線を最優先に作ります。立派なシステムより、現場で毎日使われる道具を目指しています。</p>
+      </div>
+    </div>
   </div>
 </section>
 
